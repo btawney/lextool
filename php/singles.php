@@ -5,7 +5,7 @@
     var $relativeFrequency;
   }
 
-  function singles($tokens, $limit = false) {
+  function singles(&$tokens, $limit = false) {
     $lookup = array();
     foreach ($tokens as $token) {
       if (empty($lookup[$token])) {
